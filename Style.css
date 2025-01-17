@@ -1,0 +1,120 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color:  rgb(88,183,237);
+    text-align: center;
+}
+
+#Box
+{
+    height: 70vh;
+    margin-top: 15vh;   
+    margin-bottom: 0vh;
+    display:flex;
+
+}
+
+.Game
+{
+    height: 50vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-left: 15vh;
+}
+.b
+{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 15px;
+    border-color: rgb(88,183,237);
+    border: none;
+    font-size: 8vmin;
+    color: rgb(88,183,237);
+    background-color: white;
+    
+}
+.b:hover
+{
+    box-shadow: 0 0 10px rgb(9, 9, 9);
+}
+.content
+{
+    margin-left: 10%; 
+    margin-top: 10%;  
+}
+#con
+{
+    font-size:100px;
+    font-weight: bolder;
+    color: white;
+}
+#cont
+{
+    font-size: xxx-large;
+    font-weight: bolder;
+    color:rgb(88,183,237) ;
+    background-color: white;
+}
+#reset
+{
+   height: 8vmin;
+   color:  rgb(88,183,237);
+   background-color:white ;
+   font-weight: bolder;
+   border-radius: 10px;
+   font-size: large;
+   border: none;
+}
+#reset:hover
+{
+    box-shadow: 0 0 10px rgb(9, 9, 9);
+}
+#new
+{
+    height: 8vmin;
+   color:  rgb(88,183,237);
+   background-color:white ;
+   font-weight: bolder;
+   border-radius: 10px;
+   font-size: large;
+   border: none;
+}
+#new:hover
+{
+    box-shadow: 0 0 10px rgb(9, 9, 9);
+}
+#msg
+{
+    color: white;
+    font-size: x-large;
+}
+.hide
+{
+    display: none;
+}
+
+@media (max-width: 600px) {
+  
+    .Game {
+         margin-left: 10px;
+    }
+    #con
+    {
+        font-size:small;
+        margin-right: 2px
+    }
+    #cont
+    {
+        font-size:x-small;
+        margin-right: 2px;
+    }
+}
+
+
