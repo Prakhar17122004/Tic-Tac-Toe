@@ -36,6 +36,9 @@ for(let i=0;i<buttons.length;i++)
     function reset()
     {
         enable();
+        count = 0;  
+        flag1 = false;  
+        flag2 = false;
         msgCont.classList.add("hide");
     }
     function disable()
@@ -49,6 +52,7 @@ for(let i=0;i<buttons.length;i++)
     {
         for(let box of buttons)
             {
+
                 box.disabled=false;
                 box.innerText="";
             }
@@ -76,11 +80,11 @@ for(let i=0;i<buttons.length;i++)
                     
             }
 
-            if(count===9 && flag1===false && flag2===false)
+            if(count===9 && !flag1 && !flag2)
                 {
                     msg.innerText=`Match is Tied`;
                     msgCont.classList.remove("hide");
-                    disable();  
+                    disable(); 
                 }
     };
    
